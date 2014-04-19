@@ -3,5 +3,10 @@
   "version": "0.0.0",
   "description": "A barebones SCSS framework",
   "author": "Josiah Parent",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+	"gulp"               : "3.6.0",
+	"gulp-less"          : "1.2.3",
+	"gulp-autoprefixer"  : "0.0.7"
+  }
 }
