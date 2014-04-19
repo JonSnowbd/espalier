@@ -470,6 +470,9 @@ hr {
 .text-mute {
   color: #d3d3d3;
 }
+.text-highlight {
+  background: rgba(255, 255, 0, 0.4);
+}
 .panel {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -501,6 +504,7 @@ hr {
   border: 1px solid #d3d3d3;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  white-space: nowrap;
   color: #333;
   text-decoration: none;
   padding: 5px;
