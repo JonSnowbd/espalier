@@ -15,7 +15,7 @@
 // Set body font family
 body{
 	font-family: 'Open Sans', sans-serif;
-	color:#333;
+	color:@font-color;
 }
 
 // Override body font family for headings
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6{
 hr{
 
 	border:none;
-	border-bottom:1px solid #d3d3d3;
+	border-bottom:1px solid @dark;
 
 	height:1px
 
@@ -45,7 +45,7 @@ hr{
 
 // Text modification classes below
 .text-mute{
-	color:#d3d3d3;
+	color:@dark;
 }
 .text-highlight{
 	background:rgba(255,255,0,0.4);

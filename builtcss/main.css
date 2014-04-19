@@ -439,7 +439,7 @@ th {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #333333;
 }
 h1,
 h2,
@@ -505,7 +505,7 @@ hr {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   white-space: nowrap;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   padding: 5px;
 }

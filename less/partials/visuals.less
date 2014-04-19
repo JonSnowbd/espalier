@@ -5,8 +5,8 @@
 	box-sizing:border-box;
 	padding:0.5rem;
 
-	background:#f2f2f2;
-	border:1px solid #d3d3d3;
+	background:@light;
+	border:1px solid @dark;
 
 	margin:10px auto;
 }
@@ -28,21 +28,21 @@
 
 	box-sizing:border-box;
 
-	background:linear-gradient(#f2f2f2, #d3d3d3);
-	border:1px solid #d3d3d3;
+	background:linear-gradient(@light, @dark);
+	border:1px solid @dark;
 	transition:all 0.2s;
 	white-space:nowrap;
 
-	color:#333;
+	color:@font-color;
 	text-decoration:none;
 
 	padding:5px;
 
 	&:hover{
-		background: linear-gradient(#d3d3d3, #f2f2f2);
+		background: linear-gradient(@dark, @light);
 	}
 	&:active{
-		background:#f2f2f2;
+		background:@light;
 	}
 
 
