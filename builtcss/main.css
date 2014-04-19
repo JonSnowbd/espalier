@@ -9,6 +9,8 @@ body {
   float: right;
 }
 .container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 98%;
   max-width: 1000px;
@@ -70,6 +72,8 @@ hr {
   color: #d3d3d3;
 }
 .panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.5rem;
   background: #f2f2f2;
