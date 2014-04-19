@@ -1,0 +1,49 @@
+// Google font import
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format('woff');
+}
+
+// Set body font family
+body{
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+}
+
+// Override body font family for headings
+h1, h2, h3, h4, h5, h6{
+
+	margin:0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+
+	.respond-phone({
+		text-align:center;
+	});
+
+}
+
+
+// Styling the Horizontal Rule
+hr{
+
+	border:none;
+	border-bottom:1px solid #d3d3d3;
+
+	height:1px
+
+	margin:5px 0;
+
+}
+
+// Text modification classes below
+.text-mute{
+	color:#d3d3d3;
+}

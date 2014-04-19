@@ -1,6 +1,31 @@
-.lol{
-	color:red;
+// Variables below;
+@primary: #333;
+@secondary: #F2F2F2;
+
+@small:  1000px;
+@tablet: 600px;
+@phone:  400px;
+
+// Mixins
+.respond-small(@rules) {
+	@media screen and (max-width: @small) { @rules(); }
 }
-.hey{
-	background:black;
+.respond-tablet(@rules) {
+	@media screen and (max-width: @tablet) { @rules(); }
 }
+.respond-phone(@rules) {
+	@media screen and (max-width: @phone) { @rules(); }
+}
+
+
+// Import utility classes such as .pull-left .clearfix etc
+@import 'partials/utilities';
+
+// The grid
+@import 'partials/grid';
+
+// Everything font. Includes some text classes such as .text-mute, .text-space
+@import 'partials/typography';
+
+// Visual classes such as .panel
+@import 'partials/visuals';
