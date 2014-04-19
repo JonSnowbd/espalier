@@ -1,3 +1,4 @@
+// General visibility panel
 .panel{
 
 	// fix padding screwing with height/width/overflowing
@@ -7,4 +8,42 @@
 	background:#f2f2f2;
 	border:1px solid #d3d3d3;
 
+	margin:10px auto;
+}
+
+
+// The hero panel, a subset of panel
+.hero{
+	.panel();
+
+	padding:4rem 0.5rem;
+	border:none;
+
+	text-align:center;
+}
+
+
+// Button class to be applied to <a> and <button> elements. It may work on others such as <span>
+.button{
+
+	box-sizing:border-box;
+
+	background:linear-gradient(#f2f2f2, #d3d3d3);
+	border:1px solid #d3d3d3;
+	transition:all 0.2s;
+
+	color:#333;
+	text-decoration:none;
+
+	padding:5px;
+
+	&:hover{
+		background: linear-gradient(#d3d3d3, #f2f2f2);
+	}
+	&:active{
+		background:#f2f2f2;
+	}
+}
+.button.segment{
+	border-right:none;
 }

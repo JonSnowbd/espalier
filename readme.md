@@ -20,6 +20,6 @@ The CSS is already built in ./builtcss/main.css . I will add a direct download l
 
 .pull-left, pull-right, .container
 
-.text-mute, 
+.text-mute
 
-.panel
+.panel, .hero, .button

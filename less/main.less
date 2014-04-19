@@ -3,8 +3,8 @@
 @secondary: #F2F2F2;
 
 @small:  1000px;
-@tablet: 600px;
-@phone:  400px;
+@tablet: 768px;
+@phone:  500px;
 
 // Mixins
 .respond-small(@rules) {
@@ -17,6 +17,8 @@
 	@media screen and (max-width: @phone) { @rules(); }
 }
 
+// Reset CSS
+@import 'partials/normalize';
 
 // Import utility classes such as .pull-left .clearfix etc
 @import 'partials/utilities';
@@ -29,3 +31,5 @@
 
 // Visual classes such as .panel
 @import 'partials/visuals';
+
+

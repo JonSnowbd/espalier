@@ -1,0 +1,35 @@
+// The grid container
+.grid{
+	position:relative;
+
+	&>div{
+		display:inline-block;
+		box-sizing:border-box;
+		margin:0;
+		float:left;
+	}
+	&>.one{
+		width: 16.66666666%
+	}
+	&>.two{
+		width:33.33333333%;
+	}
+	&>.three{
+		width:50%;
+	}
+	&>.four{
+		width: 66.66666666%;
+	}
+	&>.five{
+		width:83.33333333%
+	}
+	&>.six{
+		width:100%;
+	}
+
+	.respond-phone({
+		.one, .two, .three, .four, .five, .six{
+			width:100%;
+		}
+	});
+}
