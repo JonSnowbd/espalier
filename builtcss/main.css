@@ -483,7 +483,7 @@ th {
   padding-left: 10px;
   padding-right: 10px;
 }
-@media screen and (max-width: 768px) and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .grid .one,
   .grid .two,
   .grid .three,
