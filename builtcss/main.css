@@ -364,7 +364,10 @@ th {
   float: right;
 }
 .push-down {
-  margin-bottom: 20px !important;
+  margin-bottom: 75px !important;
+}
+.big-push-down {
+  margin-bottom: 100px !important;
 }
 .container {
   -webkit-box-sizing: border-box;
