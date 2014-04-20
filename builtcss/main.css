@@ -369,8 +369,8 @@ th {
 .big-push-down {
   margin-bottom: 100px !important;
 }
-.push-up {
-  margin-up: 50px !important;
+.nudge-down {
+  margin-bottom: 15px !important;
 }
 .clearfix:before,
 .clearfix:after {
@@ -390,7 +390,7 @@ th {
   -webkit-transition: max-width 0.2s;
   transition: max-width 0.2s;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 768px) {
   .container {
     max-width: 700px;
   }
@@ -398,6 +398,30 @@ th {
 @media screen and (max-width: 500px) {
   .container {
     padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hide-desktop {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+  .hide-small {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .hide-tablet {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hide-phone {
+    display: none;
+    visibility: hidden;
   }
 }
 .grid {
@@ -420,30 +444,54 @@ th {
   float: left;
 }
 .grid > .one {
-  width: 16.66666666%;
+  width: 8.33333333%;
 }
 .grid > .two {
-  width: 33.33333333%;
+  width: 16.66666666%;
 }
 .grid > .three {
-  width: 50%;
+  width: 25%;
 }
 .grid > .four {
-  width: 66.66666666%;
+  width: 33.33333333%;
 }
 .grid > .five {
-  width: 83.33333333%;
+  width: 41.66666666%;
 }
 .grid > .six {
+  width: 50%;
+}
+.grid > .seven {
+  width: 58.33333333%;
+}
+.grid > .eight {
+  width: 66.66666666%;
+}
+.grid > .nine {
+  width: 75%;
+}
+.grid > .ten {
+  width: 83.33333333%;
+}
+.grid > .eleven {
+  width: 91.66666666%;
+}
+.grid > .twelve {
   width: 100%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) and (min-width: 500px) {
   .grid .one,
   .grid .two,
   .grid .three,
   .grid .four,
   .grid .five,
-  .grid .six {
+  .grid .six,
+  .grid .seven,
+  .grid .eight,
+  .grid .nine,
+  .grid .ten,
+  .grid .eleven,
+  .grid .twelve {
     width: 100%;
   }
 }
@@ -541,4 +589,13 @@ hr {
 }
 .button.segment {
   border-right: none;
+}
+.tag {
+  background: #d3d3d3;
+  padding: 0.1rem;
+  font-size: 70%;
+  text-align: middle;
+}
+.outlined {
+  border: 1px solid #d3d3d3;
 }

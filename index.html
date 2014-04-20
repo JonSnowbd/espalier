@@ -24,30 +24,40 @@
 		</div>
 
 		<div class="container hero push-down">
+
 			<h2>Hero panel! <span class="text-mute">[.hero - visuals.less]</span></h2>
+
+			<span class="tag">Tag! You're it</span> <span class="text-mute">[.tag - visuals.less]</span>
+
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 			<p class="text-highlight">&lt;div class="hero"&gt;
 				This is how you make a hero unit.
 			&lt;/div&gt;</p>
+
 		</div>
 
-		<div class="container panel big-push-down">
+		<div class="container panel push-down">
+
 			<h2> This is a panel! <span class="text-mute">[.panel - visual.less]</span> </h2>
 			<hr />
+
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 			<p class="text-highlight">&lt;div class="panel"&gt;
 				This is how you make a panel unit.
 			&lt;/div&gt;</p>
+
 			<div class="panel">
 				<span class="pull-right">Side heading? <span class="text-mute">[.pull-right - utilities.less]</span></span>
 				<h3>Nested panel!</h3> 
@@ -59,23 +69,41 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
+
 		</div>
 
 		<div class="grid container push-down">
+
 			<h2>Grid below! <span class="text-mute">[.grid - grid.less]</span></h2>
 			<hr />
 			<p class="text-highlight">&lt;div class="grid"&gt;
 				&lt;div class="three"&gt;This is how you make a grid unit. &lt;/div&gt;
 			&lt;/div&gt;</p>
+
+			<div class="twelve panel">.twelve</div>
+
+			<div class="eleven panel">.eleven</div>
+			<div class="one panel">.one</div>
+
+			<div class="ten panel">.ten</div>
+			<div class="two panel">.two</div>
+
+			<div class="nine panel">.nine</div>
+			<div class="three panel">.three</div>
+
+			<div class="eight panel">.eight</div>
+			<div class="four panel">.four</div>
+
+			<div class="seven panel">.seven</div>
+			<div class="five panel">.five</div>
+
 			<div class="six panel">.six</div>
-			<div class="five panel">.five</div><div class="one panel">.one</div>
-			<div class="four panel panel">.four</div> <div class="two panel">.two</div>
-			<div class="three panel">.three</div> <div class="three panel">.three</div>
-			<div class="two panel">.two</div><div class="two panel">.two</div><div class="two panel">.two</div>
+			<div class="six panel">.six</div>
+
 		</div>
         
-        <div class="container grid">
-            <div class="three">
+        <div class="container grid push-down">
+            <div class="six">
                 <h3>Column layout test.</h3>
                 <hr />
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -85,7 +113,7 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="three grid">
+            <div class="six grid">
                 <h3>Actual content</h3>
                 <hr />
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -94,17 +122,39 @@
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="two">
+                <div class="six">
                 	<h3>Nested</h3>
                 	<hr />
                 	<p>It works!</p>
                 </div>
-                <div class="four">
-                	<h3>Nested again, but bigger!</h3>
+                <div class="six">
+                	<h3>Nested again, but better!</h3>
                 	<hr />
                 	<p>It works even better!</p>
                 </div>
             </div>
+        </div>
+
+        <div class="container grid push-down">
+
+        	<h3 class="nudge-down">Hidden-at classes!<span class="text-mute">[.hide-phone, .hide-tablet, .hide-small, .hide-desktop - utilities.less]</span></h3>
+
+        	<p class="text-highlight">
+				&lt;div class="hide-phone"&gt;This is how you make something disappear! &lt;/div&gt;
+			</p>
+
+        	<div class="three panel">Phone test: <span class="tag hide-phone">Hidden on mobile!</span></div>
+        	<div class="three panel">Tablet test: <span class="tag hide-tablet">Hidden on tablet!</span></div>
+        	<div class="three panel">Small test: <span class="tag hide-small">Hidden on small monitors!</span></div>
+        	<div class="three panel">Desktop test: <span class="tag hide-desktop">Hidden on desktop!</span></div>
+        </div>
+
+        <div class="hero container">
+        	<h2>Spacer hero so you can get the above content in the middle of your screen!</h2>
+        	<span>Isnt it glorious?</span>
+        	<div class="outlined hero">
+        		<h2>Nest hero, cool I guess.</h2>
+        	</div>
         </div>
 
 	</body>

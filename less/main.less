@@ -14,11 +14,14 @@
 @phone:  500px;  // Phones
 
 // Responsive Mixins
+.respond-desktop(@rules) {
+	@media screen and (min-width: @small) { @rules(); }
+}
 .respond-small(@rules) {
-	@media screen and (max-width: @small) { @rules(); }
+	@media screen and (max-width: @small) and (min-width: @tablet) { @rules(); }
 }
 .respond-tablet(@rules) {
-	@media screen and (max-width: @tablet) { @rules(); }
+	@media screen and (max-width: @tablet) and (min-width: @phone) { @rules(); }
 }
 .respond-phone(@rules) {
 	@media screen and (max-width: @phone) { @rules(); }
@@ -37,7 +40,7 @@
 // Everything font. Includes some text classes such as .text-mute, .text-space
 @import 'partials/typography';
 
-// Visual classes such as .panel
+// Visual classes such as .panel, removing will get rid of any traces of predetermined coloring/styling, leaving you with structural components.
 @import 'partials/visuals';
 
 

@@ -6,15 +6,18 @@
 	float:right;
 }
 
+// Push content down by adding a margin
 .push-down{
 	margin-bottom:50px !important;
 }
 .big-push-down{
 	margin-bottom:100px !important;
 }
-.push-up{
-    margin-up:50px !important;
+.nudge-down{
+	margin-bottom:15px !important;
 }
+
+// Clearfix utility to be included in .grid, also available as a class.
 .clearfix{
 	&:before, &:after{
 		content:" ";
@@ -45,5 +48,30 @@
 	.respond-phone({
 		padding:0.2rem;
 	});
+}
 
+// Hidden on classes
+.hide-desktop{
+	.respond-desktop({
+		display:none;
+		visibility:hidden;
+	});
+}
+.hide-small{
+	.respond-small({
+		display:none;
+		visibility:hidden;
+	});
+}
+.hide-tablet{
+	.respond-tablet({
+		display:none;
+		visibility:hidden;
+	});
+}
+.hide-phone{
+	.respond-phone({
+		display:none;
+		visibility:hidden;
+	});
 }
