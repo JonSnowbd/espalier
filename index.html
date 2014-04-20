@@ -10,7 +10,7 @@
 
 		<!-- I hope you'll forgive the disgusting markup layout if you happen to even look at the source -->
 
-		<div class="container big-push-down">
+		<div class="container push-down">
 			<h1>Espalier testing zone!</h1>
 			<span class="text-mute">Also responsive, try resizing! [.text-mute - typography.less]</span>
 			<hr />
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 
-		<div class="grid container">
+		<div class="grid container push-down">
 			<h2>Grid below! <span class="text-mute">[.grid - grid.less]</span></h2>
 			<hr />
 			<p class="text-highlight">&lt;div class="grid"&gt;
@@ -71,7 +71,41 @@
 			<div class="five panel">.five</div><div class="one panel">.one</div>
 			<div class="four panel panel">.four</div> <div class="two panel">.two</div>
 			<div class="three panel">.three</div> <div class="three panel">.three</div>
+			<div class="two panel">.two</div><div class="two panel">.two</div><div class="two panel">.two</div>
 		</div>
+        
+        <div class="container grid">
+            <div class="three">
+                <h3>Column layout test.</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="three grid">
+                <h3>Actual content</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="two">
+                	<h3>Nested</h3>
+                	<hr />
+                	<p>It works!</p>
+                </div>
+                <div class="four">
+                	<h3>Nested again, but bigger!</h3>
+                	<hr />
+                	<p>It works even better!</p>
+                </div>
+            </div>
+        </div>
 
 	</body>
 

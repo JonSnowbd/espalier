@@ -364,10 +364,21 @@ th {
   float: right;
 }
 .push-down {
-  margin-bottom: 75px !important;
+  margin-bottom: 50px !important;
 }
 .big-push-down {
   margin-bottom: 100px !important;
+}
+.push-up {
+  margin-up: 50px !important;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
 }
 .container {
   -webkit-box-sizing: border-box;
@@ -391,6 +402,14 @@ th {
 }
 .grid {
   position: relative;
+}
+.grid:before,
+.grid:after {
+  content: " ";
+  display: table;
+}
+.grid:after {
+  clear: both;
 }
 .grid > div {
   display: inline-block;
@@ -466,9 +485,9 @@ h6 {
 hr {
   border: none;
   border-bottom: 1px solid #d3d3d3;
-  height: 1px
-
-	margin:5px 0;
+  height: 1px;
+  width: 98%;
+  margin: 5px auto;
 }
 .text-mute {
   color: #d3d3d3;
