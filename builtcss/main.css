@@ -479,6 +479,10 @@ th {
 .grid > .twelve {
   width: 100%;
 }
+.grid > .gutter {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 @media screen and (max-width: 768px) and (min-width: 500px) {
   .grid .one,
   .grid .two,
