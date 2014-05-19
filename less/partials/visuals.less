@@ -7,13 +7,12 @@
 
 	background:@light;
 	border:1px solid @dark;
-
-	margin:10px auto;
 }
 
 
 // The hero panel, a subset of panel
 .hero{
+	// Extend panel
 	.panel();
 
 	padding:4rem 0.5rem;
@@ -23,18 +22,18 @@
 }
 
 
-// Button class to be applied to <a> and <button> elements. It may work on others such as <span>
+// Button class to be applied to <a> and <button> elements. It may work on others such as <span>.
 .button{
-
-	box-sizing:border-box;
 
 	background:linear-gradient(@light, @dark);
 	border:1px solid @dark;
-	transition:all 0.2s;
+
 	white-space:nowrap;
+	box-sizing:border-box;
 
 	color:@font-color;
 	text-decoration:none;
+	transition:all 0.2s;
 
 	padding:5px;
 

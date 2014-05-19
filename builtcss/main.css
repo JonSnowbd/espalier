@@ -367,10 +367,10 @@ th {
   margin-bottom: 50px !important;
 }
 .big-push-down {
-  margin-bottom: 100px !important;
+  margin-bottom: 75px !important;
 }
 .nudge-down {
-  margin-bottom: 15px !important;
+  margin-bottom: 25px !important;
 }
 .clearfix:before,
 .clearfix:after {
@@ -435,13 +435,21 @@ th {
 .grid:after {
   clear: both;
 }
-.grid > div {
+.grid > div,
+.grid > section,
+.grid > article {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   float: left;
+  padding-right: 10px;
+}
+.grid > div:last-of-type,
+.grid > section:last-of-type,
+.grid > article:last-of-type {
+  padding-right: 0px;
 }
 .grid > .one {
   width: 8.33333333%;
@@ -479,10 +487,6 @@ th {
 .grid > .twelve {
   width: 100%;
 }
-.grid > .gutter {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 @media screen and (max-width: 500px) {
   .grid .one,
   .grid .two,
@@ -497,6 +501,7 @@ th {
   .grid .eleven,
   .grid .twelve {
     width: 100%;
+    padding-right: 0;
   }
 }
 @font-face {
@@ -554,7 +559,6 @@ hr {
   padding: 0.5rem;
   background: #f2f2f2;
   border: 1px solid #d3d3d3;
-  margin: 10px auto;
 }
 .hero {
   -webkit-box-sizing: border-box;
@@ -563,24 +567,23 @@ hr {
   padding: 0.5rem;
   background: #f2f2f2;
   border: 1px solid #d3d3d3;
-  margin: 10px auto;
   padding: 4rem 0.5rem;
   border: none;
   text-align: center;
 }
 .button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#d3d3d3));
   background: -webkit-linear-gradient(#f2f2f2, #d3d3d3);
   background: linear-gradient(#f2f2f2, #d3d3d3);
   border: 1px solid #d3d3d3;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
   white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   padding: 5px;
 }
 .button:hover {
