@@ -9,8 +9,7 @@ http://jonsnowbd.github.io/espalier
 
 ### Usage
 
-See the wiki for examples of every module, or see the muted examples in the demo page.
-
+[Examples of usage](https://github.com/JonSnowbd/espalier/wiki/Class-snippets)
 
 ### Gulp tasks
 This project uses gulp to automatically build the css required for production. This is optional of course, I will always leave a fully built .css in the builtcss folder for grabs without having to download the whole repo/build it yourself. To start, simply download the repo and open a command window inside of it. Then 'npm install' to get the gulp packages, then any of the following gulp commands to build.
