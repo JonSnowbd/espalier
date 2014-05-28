@@ -23,4 +23,5 @@ Commands and tasks:
 All the modules are held in ./less/main.less . Simply delete any import to remove its contents, there are no inter-dependancies between them, you could simply take the grid alone if you so wished. Once you have modified it to your liking(protip- You can use index.html to preview any changes)
 
 ### Download
-[Download here](https://github.com/JonSnowbd/espalier/releases/download/v1.0/espalier.zip)
+[Download here](https://github.com/JonSnowbd/espalier/releases/download/v1.0.1/espalier.zip)
+Or `bower install espalier` in your project directory.
