@@ -1,13 +1,14 @@
 {
   "name": "espalier",
-  "version": "0.0.1",
-  "description": "A barebones SCSS framework",
+  "version": "1.0.1",
+  "description": "A barebones LESS framework",
   "author": "Josiah Parent",
   "license": "WTFPL",
   "dependencies": {
-  	"gulp"               : "3.6.0",
-  	"gulp-less"          : "1.2.3",
-  	"gulp-autoprefixer"  : "0.0.7",
-  	"gulp-minify-css"    : "0.3.1"
+    "gulp": "3.6.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-less": "1.2.3",
+    "gulp-minify-css": "0.3.1",
+    "gulp-rename": "^1.2.0"
   }
 }

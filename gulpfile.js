@@ -1,13 +1,15 @@
 var gulp     = require('gulp'),
 	less     = require('gulp-less'),
 	prefix   = require('gulp-autoprefixer'),
-	minify   = require('gulp-minify-css');
+	minify   = require('gulp-minify-css'),
+	name     = require('gulp-rename');
 
 gulp.task('compile', function(){
 	gulp.src('./less/main.less')
 		.pipe(less())
 		.pipe(prefix())
-		.pipe(gulp.dest('./builtcss/'));
+		.pipe(name('espalier.css'))
+		.pipe(gulp.dest('./css/'));
 });
 
 gulp.task('build', function(){
@@ -15,7 +17,8 @@ gulp.task('build', function(){
 		.pipe(less())
 		.pipe(prefix())
 		.pipe(minify())
-		.pipe(gulp.dest('./builtcss/min/'));
+		.pipe(name('espalier.min.css'))
+		.pipe(gulp.dest('./css/'));
 });
 
 gulp.task('default', ['compile']);

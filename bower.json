@@ -1,0 +1,25 @@
+{
+  "name": "espalier",
+  "version": "1.0.1",
+  "homepage": "https://github.com/JonSnowbd/espalier",
+  "authors": [
+    "Josiah Parent <vasti009@gmail.com>"
+  ],
+  "description": "A minimal LESS/CSS framework",
+  "main": "/css/espalier.css",
+  "keywords": [
+    "CSS",
+    "Minimal",
+    "Boilerplate"
+  ],
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+	"gulpfile.js",
+	".gitignore"
+  ]
+}
